@@ -1,15 +1,16 @@
 Package.describe({
   name: 'nous:utils-and-helpers',
-  version: '0.3.0',
+  version: '0.3.1',
   summary: 'Nous Meteor utils and helpers.',
   git: 'https://github.com/nous-consulting/meteor-utils-and-helpers',
   documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.2.0');
+  api.versionsFrom('1.2.1');
   api.use('coffeescript');
-  api.use('templating@1.0.0');
+  api.use('templating@1.1.5');
+  api.use('momentjs:moment@2.10.6')
 
   api.addFiles('utils.coffee');
   api.addFiles('array.coffee');
