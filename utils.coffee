@@ -6,3 +6,7 @@ NousUtils =
       x[name] = update.call doc
     delete x._id
     x
+
+
+$amount = (item) -> item?.amount ? 0
+$converted = (item) -> item?.converted ? 0
