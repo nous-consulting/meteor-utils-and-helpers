@@ -1,8 +1,8 @@
 Package.describe({
   name: 'nous:utils-and-helpers',
-  version: '0.2.0',
+  version: '0.2.5',
   summary: 'Nous Meteor utils and helpers.',
-  git: '',
+  git: 'https://github.com/nous-consulting/meteor-utils-and-helpers',
   documentation: 'README.md'
 });
 

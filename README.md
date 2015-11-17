@@ -10,11 +10,11 @@ We're using a few helpers and utils in many our apps. Here are a few most used o
 
 ## For Arrays
 
-  * arr.unique  -> returns array of uniq values or arr
-  * arr.merge(arr2) -> merge two arrays
-  * arr.exclude(element) -> will not touch original array, return array without element
-  * arr.remove(element) -> will remove element from original array
-
+  * `arr.unique`  -> returns array of uniq values or arr
+  * `arr.merge(arr2)` -> merge two arrays
+  * `arr.exclude(element)` -> will not touch original array, return array without element
+  * `arr.remove(element)` -> will remove element from original array
+  * `arr.clean()` -> will delete all `undefined` elements from array
 
 ## Property - nousProp
 

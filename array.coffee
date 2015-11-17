@@ -13,3 +13,11 @@ Array::exclude = (element) ->
 Array::remove = (element) ->
   index = @indexOf element
   @splice(index, 1)[0] if index isnt -1
+
+# Clean undefined elements from an array
+Array::clean = ->
+  index = @indexOf undefined
+  while index isnt -1
+    @splice(index, 1)
+    index = @indexOf undefined
+  return @
