@@ -22,12 +22,12 @@ We're using a few helpers and utils in many our apps. Here are a few most used o
   * `arr.remove(element)` -> will remove element from original array
   * `arr.clean()` -> will delete all `undefined` elements from array
 
-## Property - nousProp
+## Property
 
 Sometimes we want to use some function as property, e.g.
 
 ```CoffeeScript
-nousProp awesome = -> "You're awesome"
+property awesome = -> "You're awesome"
 
 alert(awesome) # Will alert "You're awesome", don't need to call awesome() function
 ```

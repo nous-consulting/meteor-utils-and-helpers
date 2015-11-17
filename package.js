@@ -1,6 +1,6 @@
 Package.describe({
   name: 'nous:utils-and-helpers',
-  version: '0.3.2',
+  version: '0.4.0',
   summary: 'Nous Meteor utils and helpers.',
   git: 'https://github.com/nous-consulting/meteor-utils-and-helpers',
   documentation: 'README.md'
@@ -12,11 +12,11 @@ Package.onUse(function(api) {
   api.use('templating@1.1.5');
   api.use('momentjs:moment@2.10.6')
 
-  api.addFiles('utils.coffee');
-  api.addFiles('array.coffee');
-  api.addFiles('properties.coffee');
-  api.addFiles('strings.coffee');
-  api.addFiles(['helpers.coffee'], 'client');
+  api.addFiles('src/utils.coffee');
+  api.addFiles('src/array.coffee');
+  api.addFiles('src/properties.coffee');
+  api.addFiles('src/strings.coffee');
+  api.addFiles(['src/helpers.coffee'], 'client');
 
   api.export('NousUtils');
   api.export('$amount');
