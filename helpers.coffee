@@ -16,8 +16,10 @@ Template.registerHelper "formatDate", (datetime, format) ->
     txt: "DD MMM"
 
   if moment
-    f = formats[format]
-    if datetime then moment(datetime).format(f) else undefined
+    if datetime
+      date = new Date datetime
+      moment(date).format(formats[format])
+    else undefined
   else
     datetime
 
