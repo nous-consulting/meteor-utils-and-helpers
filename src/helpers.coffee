@@ -17,8 +17,9 @@ Template.registerHelper "formatDate", (datetime, format) ->
 
   if moment
     if datetime
+      f = if format of formats then formats[format] else format
       date = new Date datetime
-      moment(date).format(formats[format])
+      moment(date).format(f)
     else undefined
   else
     datetime
