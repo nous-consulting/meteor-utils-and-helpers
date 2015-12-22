@@ -27,12 +27,13 @@ We're using a few helpers and utils in many our apps. Here are a few most used o
 Sometimes we want to use some function as property, e.g.
 
 ```CoffeeScript
-property awesome = -> "You're awesome"
+class Foo
+  @property onePlusTwo: -> "Result is #{1+2}"
 
-alert(awesome) # Will alert "You're awesome", don't need to call awesome() function
+x = new Foo
+alert(x.onePlusTwo) # Will alert "Result is 3", don't need to call onePlusTwo() function
 ```
 
 ## Operation with Strings
 
   * srt.capitalize -> will capitalize given string (first letter will be capitalized)
-

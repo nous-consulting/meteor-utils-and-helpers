@@ -4,6 +4,6 @@ Function::nousProp = (props) ->
     @properties[name] = prop
     Object.defineProperty @prototype, name, get: prop, enumerable:true
 
-Function::property = (prop, desc) ->
-  Object.defineProperty @prototype, prop, desc
-
+Function::property = (props) ->
+  for own name, prop of props
+    Object.defineProperty @prototype, name, get: prop, enumerable:true
